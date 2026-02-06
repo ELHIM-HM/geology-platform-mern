@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Mineral Marvels",
+    "date": "12-05-2024",
+    "detail": "Description: Explore a stunning array of colorful crystals, gemstones, and rare mineral specimens.",
+    "image": "./collections/img-1.jpg"
+  },
+  {
+    "title": "Fossil Finds",
+    "date": "12-05-2024",
+    "detail": "Description: Unearth a diverse range of fossilized remains, from prehistoric plants to iconic dinosaurs.",
+    "image": "./collections/img-2.jpg"
+  },
+  {
+    "title": "Rock Wonders",
+    "date": "12-05-2024",
+    "detail": "Description: Discover breathtaking landscapes and learn about different rock types and formations.",
+    "image": "./collections/img-3.jpg"
+  },
+  {
+    "title": "Volcanic Vistas",
+    "date": "12-05-2024",
+    "detail": "Description: Witness the raw power of volcanic eruptions and explore volcanic landscapes.",
+    "image": "./collections/img-4.jpg"
+  },
+  {
+    "title": "Ice Age Treasures",
+    "date": "12-05-2024",
+    "detail": "Description: Journey into the ancient world of Ice Age megafauna preserved in the fossil record.",
+    "image": "./collections/img-5.jpg"
+  },
+  {
+    "title": "Ocean Odyssey",
+    "date": "12-05-2024",
+    "detail": "Description: Dive beneath the waves and explore the wonders of the marine world.",
+    "image": "./collections/img-6.jpg"
+  }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
