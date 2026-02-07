@@ -221,15 +221,7 @@ git push origin feature/amazing-feature
 # Then open a Pull Request
 ```
 
----
 
-## 📞 Support
-
-- 📧 **Email**: contact@geology-platform.example.com
-- 🐛 **Issues**: [GitHub Issues](https://github.com/ELHIM-HM/geology-platform-mern/issues)
-- 📖 **Wiki**: [Documentation](https://github.com/ELHIM-HM/geology-platform-mern/wiki)
-
----
 
 ## 📄 License
 
