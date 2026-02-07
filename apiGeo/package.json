@@ -4,18 +4,20 @@
   "description": "geologie app",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "seed": "node scripts/seed.js"
   },
   "author": "hamza elhim",
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.1626.0",
-    "body-parser": "^1.20.2",
     "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
     "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
+    "dotenv": "^17.2.4",
     "express": "^4.19.2",
-    "mongoose": "^8.3.5",
+    "mongodb": "^7.1.0",
+    "mongoose": "^9.1.6",
     "morgan": "^1.10.0",
     "multer": "^1.4.5-lts.1",
     "validator": "^13.12.0"

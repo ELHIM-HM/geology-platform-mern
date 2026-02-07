@@ -1,30 +1,32 @@
-const dotenv = require('dotenv')
+const dns = require('node:dns');
+dns.setDefaultResultOrder('ipv4first');
+const dotenv = require("dotenv");
+const mongoose = require("mongoose");
 
-const mongoose = require('mongoose')
+// 1. Load Environment Variables
+dotenv.config({ path: "./.env" });
 
-dotenv.config({ path: './config.env' }) // get called only once
+// 2. Import the App (Ensure CORS is inside app.js!)
+const app = require("./app");
 
-const app = require('./app')
+const DB = process.env.DATABASE;
 
-const cors = require('cors');
-
-app.use(cors()) ; 
-
-const DB = process.env.DATABASE
-
-// DB CONNECTION
+// 3. DB CONNECTION
 mongoose
-  .connect(DB)
-  .then((con) => {
-    console.log('DB CONNECTION SECCESSFUL')
+  .connect(DB, {
+    serverSelectionTimeoutMS: 10000,
+    socketTimeoutMS: 45000,
+  })
+  .then(() => {
+    console.log("✅ DB CONNECTION SUCCESSFUL");
+    
+    // 4. START THE SERVER (Only after DB is successful)
+    const port = process.env.PORT || 3000; 
+    app.listen(port, () => {
+      console.log(`🚀 App running on port ${port}`);
+    });
   })
   .catch((err) => {
-    console.log(err)
-    console.log('DB IS NOT CONNECTED')
-  })
-
-// START THE SERVER
-const port = process.env.port || 3000
-app.listen(port, () => {
-  console.log(`app running on port ${port}`)
-})
+    console.error("❌ DB CONNECTION ERROR:", err.message);
+    process.exit(1); // Kill the process if the DB fails
+  });
