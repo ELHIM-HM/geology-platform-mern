@@ -227,6 +227,7 @@ git push origin feature/amazing-feature
 
 - 📧 **Email**: elhimhamza7@gmail.com
 - 🐛 **Issues**: [GitHub Issues](https://github.com/ELHIM-HM/geology-platform-mern/issues)
+
 ---
 
 ## 📄 License
