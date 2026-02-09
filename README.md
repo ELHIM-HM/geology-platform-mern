@@ -242,7 +242,7 @@ ISC License - feel free to use for your projects!
 
 ⭐ Star this repo if you find it helpful!
 
-*Version 1.0.0 | Last Updated: February 2026*
+*Version 1.0.0 | Last Updated: February 2024*
 
 </div>
 
